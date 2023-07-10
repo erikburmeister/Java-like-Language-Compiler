@@ -1,0 +1,32 @@
+Token,Classification
+class,<class datatype>
+iftest,<program name>
+{,<left brace>
+const,<constant datatype>
+a,<constant identifier>
+=,<assignment operator>
+5,<numeric literal>
+;,<semicolon>
+const,<constant datatype>
+b,<constant identifier>
+=,<assignment operator>
+10,<numeric literal>
+;,<semicolon>
+if,<if operator>
+b,<variable identifier>
+<,<less than operator>
+a,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+b,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+print,<print operator>
+{,<left brace>
+a,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>

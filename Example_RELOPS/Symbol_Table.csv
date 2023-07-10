@@ -1,0 +1,10 @@
+ ,Symbol,Classification,Value,Address,Segment
+1,relops,<program name>,,0,CS
+2,a,<variable identifier>,10,0,DS
+3,b,<variable identifier>,5,2,DS
+4,c,<variable identifier>,10,4,DS
+5,d,<variable identifier>,7,6,DS
+6,temp1,,,
+7,temp2,,,
+8,temp3,,,
+9,temp4,,,

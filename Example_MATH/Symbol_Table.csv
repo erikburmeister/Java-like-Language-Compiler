@@ -1,0 +1,18 @@
+ ,Symbol,Classification,Value,Address,Segment
+1,math,<program name>,,0,CS
+2,a,<variable identifier>,,0,DS
+3,b,<variable identifier>,,2,DS
+4,c,<variable identifier>,,4,DS
+5,bob,<variable identifier>,,6,DS
+6,jane,<variable identifier>,,8,DS
+7,ans,<variable identifier>,,10,DS
+8,10,<numeric literal>,10,12,DS
+9,2,<numeric literal>,2,14,DS
+10,4,<numeric literal>,4,16,DS
+11,temp1,,,
+12,temp2,,,
+13,temp3,,,
+14,temp4,,,
+15,temp5,,,
+16,temp6,,,
+17,temp7,,,

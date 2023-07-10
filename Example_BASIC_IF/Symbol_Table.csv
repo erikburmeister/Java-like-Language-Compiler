@@ -1,0 +1,5 @@
+ ,Symbol,Classification,Value,Address,Segment
+1,iftest,<program name>,,0,CS
+2,a,<constant identifier>,5,0,DS
+3,b,<constant identifier>,10,2,DS
+4,temp1,,,

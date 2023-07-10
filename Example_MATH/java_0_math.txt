@@ -1,0 +1,13 @@
+Class math{
+
+    var a = input;
+    var b = input;
+    var c = input;
+    var bob = input;
+    var jane = input;
+
+    var ans = a * ( ( bob + jane - 10) / 2 * 4) / ( b + c );
+    
+    print{ans}
+
+}

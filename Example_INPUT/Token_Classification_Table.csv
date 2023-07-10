@@ -1,0 +1,25 @@
+Token,Classification
+class,<class datatype>
+inputtest,<program name>
+{,<left brace>
+var,<variable datatype>
+x,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+print,<print operator>
+{,<left brace>
+x,<variable identifier>
+},<right brace>
+;,<semicolon>
+const,<constant datatype>
+y,<constant identifier>
+=,<assignment operator>
+5,<numeric literal>
+;,<semicolon>
+print,<print operator>
+{,<left brace>
+y,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>

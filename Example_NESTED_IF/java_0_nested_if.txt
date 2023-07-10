@@ -1,0 +1,18 @@
+Class nestedIfTest{
+
+    const a = 5;
+    const b = 10;
+    const c = 20;
+    const d = 30;
+
+    if  a < b then {
+        
+        if d > c then {
+            print{d};
+        }  
+        
+    }
+    
+    print{a};
+    
+}

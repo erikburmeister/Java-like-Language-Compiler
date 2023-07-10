@@ -1,0 +1,173 @@
+; Program Name: nestediftest
+
+sys_exit	equ	1
+sys_read	equ	3
+sys_write	equ	4
+stdin		equ	0	; default keyboard
+stdout		equ	1	; default terminal screen
+stderr		equ	3
+
+; -------------------------- declare constants ------------------------------------
+
+section .data
+    
+    a	dw	5
+    b	dw	10
+    c	dw	20
+    d	dw	30
+    temp1	dw	00000
+    temp2	dw	00000
+    userMsg         db     'Input an integer: '
+    lenUserMsg      equ    $-userMsg
+    newline         db     0xA
+    Ten             DW     10
+    num times 6     db     'ABCDEF'
+    numEnd          equ    $-num
+    Result          db     'Output: '
+    ResultValue     db     'aaaaa'
+                    db     0xA
+    ResultEnd       equ    $-Result
+    
+; -------------------------- uninitiated variables ---------------------------------
+
+section .bss 
+
+    TempChar        RESB    1
+    testchar        RESB    1
+    ReadInt         RESW    1              
+    tempint         RESW    1             
+    negflag         RESB    1 
+    
+; -------------------------- Main program -----------------------------------------
+
+global _start   
+
+section .text
+
+_start:
+    
+    mov ax, 5
+    mov [a], ax
+    nop
+    mov ax, 10
+    mov [b], ax
+    nop
+    mov ax, 20
+    mov [c], ax
+    nop
+    mov ax, 30
+    mov [d], ax
+    nop
+    mov ax, [a]
+    cmp ax, [b]
+    JGE L1
+    mov ax, [d]
+    cmp ax, [c]
+    JLE L2
+    mov ax, [d]
+    mov [d], ax
+    mov ax, [d]
+    call ConvertIntegerToString
+    mov ax, [d]
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, Result
+    mov edx, ResultEnd
+    int 80h
+L1: nop
+L2: nop
+    mov ax, [a]
+    mov [a], ax
+    mov ax, [a]
+    call ConvertIntegerToString
+    mov ax, [a]
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, Result
+    mov edx, ResultEnd
+    int 80h
+; -------------------------- End Main program -------------------------------------
+
+fini:
+
+    mov eax,sys_exit
+    xor ebx,ebx
+    int 80h
+    
+; ------------------------------ functions ----------------------------------------
+
+PrintString:
+
+    push    ax
+    push    dx
+
+    ; prompt user
+
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, userMsg
+    mov edx, lenUserMsg
+    int 80h
+    pop     dx 
+    pop     ax
+    ret
+
+;End PrintString
+
+
+GetAnInteger:
+
+    mov eax, 3
+    mov ebx, 2
+    mov ecx, num
+    mov edx, 6
+    int 0x80
+
+
+;End GetAnInteger
+
+
+ConvertStringToInteger:
+
+    mov ax, 0
+    mov [ReadInt], ax 
+    mov ecx, num
+    mov bx,0
+    mov bl, byte [ecx]
+
+Next:
+
+    sub bl,'0'
+    mov ax, [ReadInt]
+    mov dx, 10
+    mul dx
+    add ax, bx
+    mov [ReadInt], ax
+    mov bx, 0
+    add ecx, 1
+    mov bl, byte[ecx]
+    cmp bl,0xA
+    jne Next
+    ret
+
+;End GetAnInteger
+
+
+ConvertIntegerToString:
+
+    mov ebx, ResultValue + 4
+
+ConvertLoop:
+
+    sub dx,dx
+    mov cx,10
+    div cx
+    add dl,'0'
+    mov [ebx], dl
+    dec ebx
+    cmp ebx, ResultValue
+    jge ConvertLoop
+
+    ret
+
+; End ConvertIntegerToString

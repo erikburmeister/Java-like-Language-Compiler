@@ -1,0 +1,49 @@
+Token,Classification
+class,<class datatype>
+nestediftest,<program name>
+{,<left brace>
+const,<constant datatype>
+a,<constant identifier>
+=,<assignment operator>
+5,<numeric literal>
+;,<semicolon>
+const,<constant datatype>
+b,<constant identifier>
+=,<assignment operator>
+10,<numeric literal>
+;,<semicolon>
+const,<constant datatype>
+c,<constant identifier>
+=,<assignment operator>
+20,<numeric literal>
+;,<semicolon>
+const,<constant datatype>
+d,<constant identifier>
+=,<assignment operator>
+30,<numeric literal>
+;,<semicolon>
+if,<if operator>
+a,<variable identifier>
+<,<less than operator>
+b,<variable identifier>
+then,<then operator>
+{,<left brace>
+if,<if operator>
+d,<variable identifier>
+>,<greater than operator>
+c,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+d,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+},<right brace>
+print,<print operator>
+{,<left brace>
+a,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>

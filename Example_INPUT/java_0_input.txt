@@ -1,0 +1,9 @@
+Class inputTest{
+
+    var x = input;
+    print {x};
+    
+    const y = 5;
+    print {y};
+    
+}

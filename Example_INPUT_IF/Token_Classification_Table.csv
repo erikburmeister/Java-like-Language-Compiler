@@ -1,0 +1,39 @@
+Token,Classification
+class,<class datatype>
+ifinputtest,<program name>
+{,<left brace>
+var,<variable datatype>
+x,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+var,<variable datatype>
+y,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+if,<if operator>
+x,<variable identifier>
+>,<greater than operator>
+y,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+x,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+if,<if operator>
+y,<variable identifier>
+>,<greater than operator>
+x,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+y,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+},<right brace>

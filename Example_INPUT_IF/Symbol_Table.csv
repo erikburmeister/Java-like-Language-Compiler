@@ -1,0 +1,6 @@
+ ,Symbol,Classification,Value,Address,Segment
+1,ifinputtest,<program name>,,0,CS
+2,x,<variable identifier>,,0,DS
+3,y,<variable identifier>,,2,DS
+4,temp1,,,
+5,temp2,,,

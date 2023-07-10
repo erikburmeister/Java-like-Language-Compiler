@@ -1,0 +1,73 @@
+Token,Classification
+class,<class datatype>
+relops,<program name>
+{,<left brace>
+var,<variable datatype>
+a,<variable identifier>
+=,<assignment operator>
+10,<numeric literal>
+;,<semicolon>
+var,<variable datatype>
+b,<variable identifier>
+=,<assignment operator>
+5,<numeric literal>
+;,<semicolon>
+var,<variable datatype>
+c,<variable identifier>
+=,<assignment operator>
+10,<numeric literal>
+;,<semicolon>
+var,<variable datatype>
+d,<variable identifier>
+=,<assignment operator>
+7,<numeric literal>
+;,<semicolon>
+if,<if operator>
+a,<variable identifier>
+>,<greater than operator>
+b,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+a,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+if,<if operator>
+a,<variable identifier>
+>=,<greater than equals operator>
+c,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+c,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+if,<if operator>
+b,<variable identifier>
+<,<less than operator>
+d,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+d,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+if,<if operator>
+b,<variable identifier>
+<=,<less than equals operator>
+a,<variable identifier>
+then,<then operator>
+{,<left brace>
+print,<print operator>
+{,<left brace>
+a,<variable identifier>
+},<right brace>
+;,<semicolon>
+},<right brace>
+},<right brace>

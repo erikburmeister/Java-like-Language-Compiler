@@ -1,0 +1,32 @@
+class relops{
+
+    var a = 10;
+    var b = 5;
+    var c = 10;
+    var d = 7;
+
+    if  a > b then {
+        
+        print{a};
+
+    }
+    
+    if  a >= c then {
+        
+        print{c};
+
+    }
+    
+    if  b < d then {
+        
+        print{d};
+
+    }
+    
+    if  b <= a then {
+        
+        print{a};
+
+    }
+    
+}

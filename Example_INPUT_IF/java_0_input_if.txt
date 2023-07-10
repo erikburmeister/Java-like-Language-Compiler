@@ -1,0 +1,18 @@
+Class ifInputTest{
+
+    var x = input;
+    var y = input;
+
+    if  x > y then {
+        
+        print{x};
+
+    }
+    
+    if  y > x then {
+        
+        print{y};
+
+    }
+    
+}

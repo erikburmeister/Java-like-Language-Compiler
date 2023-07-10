@@ -1,0 +1,59 @@
+Token,Classification
+class,<class datatype>
+math,<program name>
+{,<left brace>
+var,<variable datatype>
+a,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+var,<variable datatype>
+b,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+var,<variable datatype>
+c,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+var,<variable datatype>
+bob,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+var,<variable datatype>
+jane,<variable identifier>
+=,<assignment operator>
+input,<input operator>
+;,<semicolon>
+var,<variable datatype>
+ans,<variable identifier>
+=,<assignment operator>
+a,<variable identifier>
+*,<multiplication operator>
+(,<left parenthesis>
+(,<left parenthesis>
+bob,<variable identifier>
++,<addition operator>
+jane,<variable identifier>
+-,<subtraction operator>
+10,<numeric literal>
+),<right parenthesis>
+/,<division operator>
+2,<numeric literal>
+*,<multiplication operator>
+4,<numeric literal>
+),<right parenthesis>
+/,<division operator>
+(,<left parenthesis>
+b,<variable identifier>
++,<addition operator>
+c,<variable identifier>
+),<right parenthesis>
+;,<semicolon>
+print,<print operator>
+{,<left brace>
+ans,<variable identifier>
+},<right brace>
+},<right brace>

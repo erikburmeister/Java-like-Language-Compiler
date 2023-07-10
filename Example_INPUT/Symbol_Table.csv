@@ -1,0 +1,4 @@
+ ,Symbol,Classification,Value,Address,Segment
+1,inputtest,<program name>,,0,CS
+2,x,<variable identifier>,,0,DS
+3,y,<constant identifier>,5,2,DS
